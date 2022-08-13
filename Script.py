@@ -93,7 +93,8 @@ This module only works for my admins
 ○ Total Chats: <code>{}</code>
 ○ Used Storage: <code>{}</code>
 ○ Free Storage: <code>{}</code>
-<a href=https://t.me/showsarchive>Cine Verse Archive</a></i></b>"""
+
+<a href=https://t.me/showsarchive><b>Cine Verse Archive</b></a></i></b>"""
     LOG_TEXT_G = """NewGroup
 Group = {}(<code>{}</code>)
 Total Members = <code>{}</code>
