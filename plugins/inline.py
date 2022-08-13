@@ -26,8 +26,8 @@ async def answer(bot, query):
     if not await inline_users(query):
         await query.answer(results=[],
                            cache_time=0,
-                           switch_pm_text='okDa',
-                           switch_pm_parameter="hehe")
+                           switch_pm_text='Okay',
+                           switch_pm_parameter="Hehe")
         return
 
     if AUTH_CHANNEL and not await is_subscribed(bot, query):
@@ -57,14 +57,8 @@ async def answer(bot, query):
         title=file.file_name
         size=get_size(file.file_size)
         f_caption=file.caption
-        if CUSTOM_FILE_CAPTION:
-            try:
-                f_caption=CUSTOM_FILE_CAPTION.format(file_name= '' if title is None else title, file_size='' if size is None else size, file_caption='' if f_caption is None else f_caption)
-            except Exception as e:
-                logger.exception(e)
-                f_caption=f_caption
         if f_caption is None:
-            f_caption = f"{file.file_name}"
+            f_caption = f"<b>{file.file_name}</b>\n\n ○ <b>Courtesy of <a href=https://t.me/showsarchive>Cine Verse Archive</a></b>"
         results.append(
             InlineQueryResultCachedDocument(
                 title=file.file_name,
@@ -103,7 +97,7 @@ async def answer(bot, query):
 def get_reply_markup(query):
     buttons = [
         [
-            InlineKeyboardButton('Search again', switch_inline_query_current_chat=query)
+            InlineKeyboardButton('Search Again', switch_inline_query_current_chat=query)
         ]
         ]
     return InlineKeyboardMarkup(buttons)
