@@ -2,6 +2,7 @@ class script(object):
     START_TXT = """<b><i>Hey, {}
 I'm <a href=https://t.me/{}>{}</a>, Imma Give Ya MOVIES!!!
 Use The Search Inline Option Below!
+
 Made For <a href=https://t.me/showsarchive>Cine Verse Archive</a></i></b>"""
     HELP_TXT = """<b><i>Here is the help for my commands</i></b>"""
     ABOUT_TXT = """<b>○ My Name: {}
@@ -10,7 +11,7 @@ Made For <a href=https://t.me/showsarchive>Cine Verse Archive</a></i></b>"""
 ○ Language: Python 3
 ○ Database: Mongo DB
 ○ Bot Server: Oracle
-○ Build Status: V2.0.02</b>"""
+○ Build Status: V3.8.13</b>"""
     SOURCE_TXT = """<b>NOTE:</b>
 - Eva Maria is a open source project. 
 - Source - https://github.com/EvamariaTG/EvaMaria  
@@ -93,7 +94,7 @@ This module only works for my admins
 ○ Used Storage: <code>{}</code>
 ○ Free Storage: <code>{}</code>
 <a href=https://t.me/showsarchive>Cine Verse Archive</a></i></b>"""
-    LOG_TEXT_G = """#NewGroup
+    LOG_TEXT_G = """NewGroup
 Group = {}(<code>{}</code>)
 Total Members = <code>{}</code>
 Added By - {}
