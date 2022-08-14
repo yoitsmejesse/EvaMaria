@@ -29,12 +29,10 @@ Made For <a href=https://t.me/showsarchive>Cine Verse Archive</a></i></b>"""
 • /filters - <code>list all the filters of a chat</code>
 • /del - <code>delete a specific filter in chat</code>
 • /delall - <code>delete the whole filters in a chat (chat owner only)</code>"""
-    BUTTON_TXT = """Help: <b>Buttons</b>
-
-- Eva Maria Supports both url and alert inline buttons.
+    BUTTON_TXT = """<b>Help: Buttons</b>
 
 <b>NOTE:</b>
-<i>1. Telegram will not allows you to send buttons without any content, so content is mandatory.
+<i>1. Telegram will not allow you to send buttons without any content, so content is mandatory.
 2. Jinx supports buttons with any telegram media type.
 3. Buttons should be properly parsed as markdown format.</i>
 
