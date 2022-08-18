@@ -54,7 +54,7 @@ async def answer(bot, query):
                                                   offset=offset)
 
     for file in files:
-        title=file.file_name
+        title=file.file_name.replace(" ", ".")
         size=get_size(file.file_size)
         f_caption=file.caption
         if f_caption is None:
