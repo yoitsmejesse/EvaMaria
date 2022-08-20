@@ -348,7 +348,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 logger.exception(e)
             f_caption = f_caption
         if f_caption is None:
-            f_caption = f"<b>{files.file_name}</b>\n\n ○ <b>Courtesy of <a href=https://t.me/showsarchive>Cine Verse Archive</a></b>"
+            f_caption = f"<b>{file_name}</b>\n\n ○ <b>Courtesy of <a href=https://t.me/showsarchive>Cine Verse Archive</a></b>"
 
         try:
             if AUTH_CHANNEL and not await is_subscribed(client, query):
