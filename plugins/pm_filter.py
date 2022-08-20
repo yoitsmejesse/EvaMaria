@@ -383,14 +383,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
         title = files.file_name
         size = get_size(files.file_size)
         f_caption = files.caption
-        if CUSTOM_FILE_CAPTION:
-            try:
-                f_caption = CUSTOM_FILE_CAPTION.format(file_name='' if title is None else title,
-                                                       file_size='' if size is None else size,
-                                                       file_caption='' if f_caption is None else f_caption)
-            except Exception as e:
-                logger.exception(e)
-                f_caption = f_caption
         if f_caption is None:
             f_caption = f"<b>{title}</b>\n\n ○ <b>Courtesy of <a href=https://t.me/showsarchive>Cine Verse Archive</a></b>"
         await query.answer()
