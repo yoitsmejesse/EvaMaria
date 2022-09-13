@@ -9,8 +9,7 @@ Made For <a href=https://t.me/showsarchive>Cine Verse Archive</a></i></b>"""
 ○ Creator: <a href=https://t.me/showsarchive>Cine Verse Archive</a>
 ○ Library: Pyrogram
 ○ Language: Python 3
-○ Bot Server: Oracle
-○ Build Status: V3.8.13</b>"""
+○ Build Status: V3.09.13</b>"""
     SOURCE_TXT = """<b>NOTE:</b>
 - Eva Maria is a open source project. 
 - Source - https://github.com/EvamariaTG/EvaMaria  
