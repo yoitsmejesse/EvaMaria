@@ -12,7 +12,7 @@ def is_enabled(value, default):
 
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = '10012378'
+API_ID = 10012378
 API_HASH = 'e4b851e683d75f83293ecd51ae135976'
 BOT_TOKEN = '5166508400:AAEBwoocaTS-Ij4ilIH-wCpl1J6QQP6wupI'
 
@@ -45,13 +45,13 @@ https://telegra.ph/file/e5c3272ccb1346fe8a724.jpg
 https://telegra.ph/file/c8bff892a7239f7068c3f.jpg'
 
 # Admins, Channels & Users
-ADMINS = '901899557 5238714460'
-CHANNELS = '-1001489791799'
+ADMINS = [901899557, 5238714460]
+CHANNELS = [-1001489791799]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 auth_channel = environ.get('AUTH_CHANNEL')
 auth_grp = environ.get('AUTH_GROUP')
-AUTH_CHANNEL = '-1001511186264'
+AUTH_CHANNEL = [-1001511186264]
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
 # MongoDB information
@@ -60,7 +60,7 @@ DATABASE_NAME = 'JinxVerseV2'
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Others
-LOG_CHANNEL = '-1001724781682'
+LOG_CHANNEL = [-1001724781682]
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'TeamEvamaria')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
 IMDB = 'False'
