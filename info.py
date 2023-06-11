@@ -12,14 +12,14 @@ def is_enabled(value, default):
 
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = 10012378
-API_HASH = e4b851e683d75f83293ecd51ae135976
-BOT_TOKEN = 5166508400:AAEBwoocaTS-Ij4ilIH-wCpl1J6QQP6wupI
+API_ID = '10012378'
+API_HASH = 'e4b851e683d75f83293ecd51ae135976'
+BOT_TOKEN = '5166508400:AAEBwoocaTS-Ij4ilIH-wCpl1J6QQP6wupI'
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', False))
-PICS = https://telegra.ph/file/cdeae1b25b5d9799e9cde.jpg
+PICS = 'https://telegra.ph/file/cdeae1b25b5d9799e9cde.jpg
 https://telegra.ph/file/04c637aceecfce8d4af39.jpg
 https://telegra.ph/file/bab9f8b3bdf18acc11991.jpg
 https://telegra.ph/file/5d7175eb1a5d27ab40520.jpg
@@ -42,46 +42,38 @@ https://telegra.ph/file/2967c25a5e95b627b85d9.jpg
 https://telegra.ph/file/496d3765872638f3d8b84.jpg
 https://telegra.ph/file/44ee0109180558bdc9c3a.jpg
 https://telegra.ph/file/e5c3272ccb1346fe8a724.jpg
-https://telegra.ph/file/c8bff892a7239f7068c3f.jpg
+https://telegra.ph/file/c8bff892a7239f7068c3f.jpg'
 
 # Admins, Channels & Users
-ADMINS = 901899557 5238714460
-CHANNELS = -1001489791799
+ADMINS = '901899557 5238714460'
+CHANNELS = '-1001489791799'
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 auth_channel = environ.get('AUTH_CHANNEL')
 auth_grp = environ.get('AUTH_GROUP')
-AUTH_CHANNEL = -1001511186264
+AUTH_CHANNEL = '-1001511186264'
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
 # MongoDB information
-DATABASE_URI = mongodb+srv://alexademiebot:alexademiebot@cluster0.wiern.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
-DATABASE_NAME = JinxVerseV2
+DATABASE_URI = "mongodb+srv://alexademiebot:alexademiebot@cluster0.wiern.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+DATABASE_NAME = 'JinxVerseV2'
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Others
-LOG_CHANNEL = -1001724781682
+LOG_CHANNEL = '-1001724781682'
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'TeamEvamaria')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
-IMDB = False
+IMDB = 'False'
 SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "False")), False)
-CUSTOM_FILE_CAPTION = <b>{file_name}</b>
-
-○ <b>Courtesy of <a href=https://t.me/showsarchive>Cine Verse Archive</a></b>
+CUSTOM_FILE_CAPTION = '<b>{file_name}</b>\n\n○ <b>Courtesy of <a href=https://t.me/showsarchive>Cine Verse Archive</a></b>'
 BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", CUSTOM_FILE_CAPTION)
-IMDB_TEMPLATE = <b>{title} | {year} • {kind}</b>
-
-<b>Rating ⭐️: {rating} / 10 on IMDb</b>
-<b>Runtime: {runtime} Minutes</b>
-<b>Genres: {genres}</b>
-
-<b>Language: {languages} | Subbed</b>
+IMDB_TEMPLATE = '<b>{title} | {year} • {kind}</b>\n<b>Rating ⭐️: {rating} / 10 on IMDb</b>\n<b>Runtime: {runtime} Minutes</b>\n<b>Genres: {genres}</b>\n<b>Language: {languages} | Subbed</b>'
 LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "False"), False)
-SPELL_CHECK_REPLY = False
+SPELL_CHECK_REPLY = 'False'
 MAX_LIST_ELM = environ.get("MAX_LIST_ELM", None)
 INDEX_REQ_CHANNEL = int(environ.get('INDEX_REQ_CHANNEL', LOG_CHANNEL))
 FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '')).split()]
-MELCOW_NEW_USERS = False
+MELCOW_NEW_USERS = 'False'
 PROTECT_CONTENT = is_enabled((environ.get('PROTECT_CONTENT', "False")), False)
 PUBLIC_FILE_STORE = is_enabled((environ.get('PUBLIC_FILE_STORE', "True")), True)
 
